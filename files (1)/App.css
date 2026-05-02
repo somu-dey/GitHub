@@ -1,16 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
 /* ── Reset & Base ── */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  font-family: "Inter", system-ui, sans-serif;
+  font-family: 'Inter', system-ui, sans-serif;
   background: #0a0a0f;
   color: #e2d9f3;
   height: 100vh;
@@ -107,10 +101,7 @@ body {
   margin-left: auto;
 }
 
-.close-btn:hover {
-  color: #a78bfa;
-  background: #1a1432;
-}
+.close-btn:hover { color: #a78bfa; background: #1a1432; }
 
 .new-btn {
   width: 100%;
@@ -126,15 +117,10 @@ body {
   display: flex;
   align-items: center;
   gap: 9px;
-  transition:
-    background 0.15s,
-    border-color 0.15s;
+  transition: background 0.15s, border-color 0.15s;
 }
 
-.new-btn:hover {
-  background: #221e3a;
-  border-color: #4c3f8a;
-}
+.new-btn:hover { background: #221e3a; border-color: #4c3f8a; }
 
 .plus-icon {
   width: 18px;
@@ -167,13 +153,8 @@ body {
   scrollbar-color: #2a2040 transparent;
 }
 
-.chat-list::-webkit-scrollbar {
-  width: 3px;
-}
-.chat-list::-webkit-scrollbar-thumb {
-  background: #2a2040;
-  border-radius: 3px;
-}
+.chat-list::-webkit-scrollbar { width: 3px; }
+.chat-list::-webkit-scrollbar-thumb { background: #2a2040; border-radius: 3px; }
 
 .chat-item {
   padding: 9px 10px;
@@ -185,20 +166,11 @@ body {
   align-items: center;
   gap: 8px;
   margin-bottom: 1px;
-  transition:
-    background 0.12s,
-    color 0.12s;
+  transition: background 0.12s, color 0.12s;
 }
 
-.chat-item:hover:not(.active) {
-  background: #131122;
-  color: #9d8fd4;
-}
-.chat-item.active {
-  background: #1a1432;
-  color: #c4b5fd;
-  font-weight: 500;
-}
+.chat-item:hover:not(.active) { background: #131122; color: #9d8fd4; }
+.chat-item.active { background: #1a1432; color: #c4b5fd; font-weight: 500; }
 
 .c-dot {
   width: 5px;
@@ -208,9 +180,7 @@ body {
   flex-shrink: 0;
 }
 
-.chat-item.active .c-dot {
-  background: #7c3aed;
-}
+.chat-item.active .c-dot { background: #7c3aed; }
 
 .chat-name {
   flex: 1;
@@ -227,19 +197,12 @@ body {
   font-size: 11px;
   padding: 2px 5px;
   border-radius: 4px;
-  transition:
-    color 0.1s,
-    background 0.1s;
+  transition: color 0.1s, background 0.1s;
   flex-shrink: 0;
 }
 
-.chat-item:hover .del-btn {
-  color: #5b4f8a;
-}
-.del-btn:hover {
-  color: #f87171 !important;
-  background: #2a1010;
-}
+.chat-item:hover .del-btn { color: #5b4f8a; }
+.del-btn:hover { color: #f87171 !important; background: #2a1010; }
 
 .sb-foot {
   padding: 14px 16px;
@@ -266,11 +229,7 @@ body {
   box-shadow: 0 0 6px #22c55e66;
 }
 
-.model-text {
-  font-size: 11px;
-  color: #4ade80;
-  font-weight: 500;
-}
+.model-text { font-size: 11px; color: #4ade80; font-weight: 500; }
 
 /* ── Main ── */
 .main {
@@ -386,13 +345,8 @@ body {
   scrollbar-color: #1e1e2e transparent;
 }
 
-.msgs::-webkit-scrollbar {
-  width: 4px;
-}
-.msgs::-webkit-scrollbar-thumb {
-  background: #1e1e2e;
-  border-radius: 4px;
-}
+.msgs::-webkit-scrollbar { width: 4px; }
+.msgs::-webkit-scrollbar-thumb { background: #1e1e2e; border-radius: 4px; }
 
 .empty {
   flex: 1;
@@ -417,11 +371,7 @@ body {
   margin-bottom: 6px;
 }
 
-.empty-title {
-  font-size: 15px;
-  font-weight: 500;
-  color: #9d8fd4;
-}
+.empty-title { font-size: 15px; font-weight: 500; color: #9d8fd4; }
 
 .empty-sub {
   font-size: 13px;
@@ -437,19 +387,11 @@ body {
   animation: msgIn 0.18s ease;
 }
 
-.msg-row.user {
-  flex-direction: row-reverse;
-}
+.msg-row.user { flex-direction: row-reverse; }
 
 @keyframes msgIn {
-  from {
-    opacity: 0;
-    transform: translateY(6px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 .av {
@@ -465,16 +407,8 @@ body {
   margin-top: 2px;
 }
 
-.av.u {
-  background: #1a1432;
-  color: #a78bfa;
-  border: 0.5px solid #3d2d7a;
-}
-.av.a {
-  background: #0d1a14;
-  color: #34d399;
-  border: 0.5px solid #1a3a2a;
-}
+.av.u { background: #1a1432; color: #a78bfa; border: 0.5px solid #3d2d7a; }
+.av.a { background: #0d1a14; color: #34d399; border: 0.5px solid #1a3a2a; }
 
 .bubble {
   max-width: 72%;
@@ -500,12 +434,7 @@ body {
   border-bottom-left-radius: 4px;
 }
 
-.typing {
-  display: flex;
-  gap: 5px;
-  align-items: center;
-  padding: 3px 0;
-}
+.typing { display: flex; gap: 5px; align-items: center; padding: 3px 0; }
 
 .dot {
   width: 6px;
@@ -515,24 +444,12 @@ body {
   animation: blink 1.3s ease-in-out infinite;
 }
 
-.dot:nth-child(2) {
-  animation-delay: 0.18s;
-}
-.dot:nth-child(3) {
-  animation-delay: 0.36s;
-}
+.dot:nth-child(2) { animation-delay: 0.18s; }
+.dot:nth-child(3) { animation-delay: 0.36s; }
 
 @keyframes blink {
-  0%,
-  60%,
-  100% {
-    opacity: 0.25;
-    transform: scale(0.85);
-  }
-  30% {
-    opacity: 1;
-    transform: scale(1);
-  }
+  0%, 60%, 100% { opacity: 0.25; transform: scale(0.85); }
+  30%            { opacity: 1;    transform: scale(1); }
 }
 
 /* ── Input ── */
@@ -553,9 +470,7 @@ body {
   transition: border-color 0.15s;
 }
 
-.input-box:focus-within {
-  border-color: #5b3fd4;
-}
+.input-box:focus-within { border-color: #5b3fd4; }
 
 textarea {
   flex: 1;
@@ -572,9 +487,7 @@ textarea {
   -webkit-appearance: none;
 }
 
-textarea::placeholder {
-  color: #3d2d6a;
-}
+textarea::placeholder { color: #3d2d6a; }
 
 .send-btn {
   width: 36px;
@@ -587,34 +500,21 @@ textarea::placeholder {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  transition:
-    opacity 0.15s,
-    transform 0.1s;
+  transition: opacity 0.15s, transform 0.1s;
   -webkit-tap-highlight-color: transparent;
 }
 
-.send-btn:hover:not(:disabled) {
-  opacity: 0.85;
-}
-.send-btn:active:not(:disabled) {
-  transform: scale(0.94);
-}
-.send-btn:disabled {
-  opacity: 0.3;
-  cursor: not-allowed;
-}
+.send-btn:hover:not(:disabled) { opacity: 0.85; }
+.send-btn:active:not(:disabled) { transform: scale(0.94); }
+.send-btn:disabled { opacity: 0.3; cursor: not-allowed; }
 
-.hint {
-  font-size: 11px;
-  color: #2d2350;
-  text-align: center;
-  margin-top: 8px;
-}
+.hint { font-size: 11px; color: #2d2350; text-align: center; margin-top: 8px; }
 
 /* ══════════════════════════════════════
    MOBILE — max 768px
 ══════════════════════════════════════ */
 @media (max-width: 768px) {
+
   /* Sidebar becomes a slide-in drawer */
   .sidebar {
     position: fixed;
@@ -622,73 +522,47 @@ textarea::placeholder {
     left: 0;
     height: 100dvh;
     transform: translateX(-100%);
-    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 0 24px rgba(0,0,0,0.5);
   }
 
   .sidebar.open {
     transform: translateX(0);
   }
 
-  .overlay {
-    display: block;
-  }
+  .overlay { display: block; }
 
   /* Show close button inside sidebar */
-  .close-btn {
-    display: flex;
-  }
+  .close-btn { display: flex; }
 
   /* Show hamburger in topbar */
-  .hamburger {
-    display: flex;
-  }
+  .hamburger { display: flex; }
 
   /* Show small logo in topbar */
-  .logo-box-sm {
-    display: flex;
-  }
+  .logo-box-sm { display: flex; }
 
   /* Bubbles wider on mobile */
-  .bubble {
-    max-width: 85%;
-    font-size: 14px;
-  }
+  .bubble { max-width: 85%; font-size: 14px; }
 
   /* Slightly smaller topbar title */
-  .tb-title {
-    font-size: 13px;
-  }
+  .tb-title { font-size: 13px; }
 
   /* Hide token badge on very small screens */
-  .tk-badge {
-    display: none;
-  }
+  .tk-badge { display: none; }
 
   /* Input area padding tighter */
-  .input-wrap {
-    padding: 10px 12px 14px;
-  }
+  .input-wrap { padding: 10px 12px 14px; }
 
   /* Hint hidden on mobile — no keyboard shortcut needed */
-  .hint {
-    display: none;
-  }
+  .hint { display: none; }
 
   /* Messages padding tighter */
-  .msgs {
-    padding: 16px 14px;
-    gap: 10px;
-  }
+  .msgs { padding: 16px 14px; gap: 10px; }
 }
 
 /* ══════════════════════════════════════
    TABLET — 769px to 1024px
 ══════════════════════════════════════ */
 @media (min-width: 769px) and (max-width: 1024px) {
-  .sidebar {
-    width: 210px;
-  }
-  .bubble {
-    max-width: 75%;
-  }
+  .sidebar { width: 210px; }
+  .bubble { max-width: 75%; }
 }

@@ -182,8 +182,10 @@ export default function App() {
           {!msgs.length ? (
             <div className="empty">
               <div className="empty-orb">✦</div>
-              <p className="empty-title">Ready when you are !</p>
-              <p className="empty-sub">Powered By Groq AI 🦾</p>
+              <p className="empty-title">Koi bhi sawaal pucho</p>
+              <p className="empty-sub">
+                Groq ke saath powered — fast responses, bilkul free
+              </p>
             </div>
           ) : (
             msgs.map((m, i) => (
