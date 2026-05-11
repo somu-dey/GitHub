@@ -43,7 +43,7 @@ async def chat(request: ChatRequest):
             },
             *[m.dict() for m in limited]
         ],
-        max_tokens=1024,
+        max_tokens=500,
     )
 
     reply = response.choices[0].message.content
